@@ -1,0 +1,122 @@
+/* start variables */
+:root {
+  --main-color: ;
+}
+/* end variables */
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End Global Rules */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+main {
+  width: 375px;
+  height: 100%;
+  background-color: #242530;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width:500px) {
+  main {
+    width: 100%;
+  }
+}
+.maindiv {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 82px;
+  color: #ffffff;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  grid-template-rows: 94px 94px 94px 94px 94px;
+}
+.equal {
+  height: 188px;
+}
+.buttons button {
+  background: #2e2f3e;
+  border: 0.5px solid #242530;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 2px rgb(71, 71, 71);
+  margin-bottom: 3px;
+}button:active {
+  background-color: #2e2f3e;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+.multi,
+.minus,
+.plus,
+.backspace,
+.devide {
+  color: #ffbb00 !important;
+}
+.equal {
+  background-color: #ffbb00 !important;
+}
+.maindiv {
+  position: absolute;
+  top: -90px;
+  right: 10px;
+}
